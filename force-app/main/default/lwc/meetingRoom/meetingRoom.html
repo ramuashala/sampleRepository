@@ -1,0 +1,18 @@
+<!-- <template>
+    <div class="slds-p-around_medium lgc-bg" onclick={tileClickHandler}>
+        <lightning-tile label={room.roomName} slot="Tileslot" href="/path/to/somewhere">
+            <p class="slds-truncate" title={room.roomCapacity}>Room Capacity:{room.roomCapacity}</p>
+        </lightning-tile>
+        <slot name="tileslot"></slot>
+        <slot> </slot>
+    </div>  
+</template> -->
+
+<template>
+       <div class="slds-p-around_medium lgc-bg" onclick={tileClickHandler}>
+            <lightning-tile label={meetingRoomInfo.roomName} href="/path/to/somewhere">
+                <p class="slds-truncate" title={meetingRoomInfo.roomCapacity}>Room Capacity:
+                    {meetingRoomInfo.roomCapacity}</p>
+            </lightning-tile>
+        </div>
+</template>

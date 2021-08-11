@@ -1,0 +1,16 @@
+<template> 
+    <ul>
+        <template if:true={responseReceived}>    
+            <template for:each={accounts.data} for:item="account">
+                <li key={account.id}>
+                    <div class="slds-p-around_medium lgc-bg">
+                        <lightning-tile label={account.Name} type="media">
+                            <lightning-icon slot="media" icon-name="standard:groups"></lightning-icon>
+                            <p class="slds-truncate" title={account.Phone}>{account.Phone}</p>
+                        </lightning-tile>
+                    </div>
+                </li>
+            </template>
+        </template>    
+    </ul>       
+</template>

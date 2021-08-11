@@ -1,0 +1,12 @@
+<template>
+    <lightning-input type="checkbox" label="Show Div" onchange={setdisplayDivtrue}></lightning-input>
+    <template if:true={displayDiv}>
+        <div> Hi Ethan? Do you choose to accept your new Mission?</div>    
+    </template>
+    <template for:each={cityList} for:item="city">
+        <p key={city}>{city}</p>
+    </template>
+    <template iterator:it={cityList}>
+        <p key={it.value}>{it.value}</p>
+    </template>
+</template>
