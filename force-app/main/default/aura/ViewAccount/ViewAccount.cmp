@@ -35,6 +35,7 @@ Record List
 </aura:iteration>
 </tbody>
 </table>
+
 <lightning:button variant="brand-outline" label="SortByAccName" title="Brand action" onclick="{! c.sortByAccName }" />
 <lightning:button variant="brand-outline" label="SortByAccOwner" title="Brand actionn" onclick="{! c.sortByAccOwner }" />
 </div>
